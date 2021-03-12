@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56A43959-EEB7-4DE4-8752-02AB6BA57061}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Specification</RootNamespace>
+    <AssemblyName>Specification</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Desktop\ПО\4\01.12.18\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="catalogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogForm.Designer.cs">
+      <DependentUpon>catalogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="entityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="entityForm.Designer.cs">
+      <DependentUpon>entityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="equipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="equipForm.Designer.cs">
+      <DependentUpon>equipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="groupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="groupForm.designer.cs">
+      <DependentUpon>groupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="groupingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="groupingForm.Designer.cs">
+      <DependentUpon>groupingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pinForm.Designer.cs">
+      <DependentUpon>pinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="setForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setForm.Designer.cs">
+      <DependentUpon>setForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sheetForm.Designer.cs">
+      <DependentUpon>sheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="specForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="specForm.Designer.cs">
+      <DependentUpon>specForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="catalogForm.resx">
+      <DependentUpon>catalogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entityForm.resx">
+      <DependentUpon>entityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="equipForm.resx">
+      <DependentUpon>equipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupForm.resx">
+      <DependentUpon>groupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupingForm.resx">
+      <DependentUpon>groupingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pinForm.resx">
+      <DependentUpon>pinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="setForm.resx">
+      <DependentUpon>setForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheetForm.resx">
+      <DependentUpon>sheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="specForm.resx">
+      <DependentUpon>specForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_button_2-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_167289.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65609.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\specification.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
